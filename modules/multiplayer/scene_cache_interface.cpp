@@ -113,7 +113,7 @@ void SceneCacheInterface::process_simplify_path(int p_from, const uint8_t *p_pac
 	const NodePath path = paths;
 
 	Node *node = root_node->get_node(path);
-	ERR_FAIL_NULL(node);
+	//ERR_FAIL_NULL(node); // disabled - linked
 	const bool valid_rpc_checksum = multiplayer->get_rpc_md5(node) == methods_md5;
 	if (valid_rpc_checksum == false) {
 		// ERR_PRINT("The rpc node checksum failed. Make sure to have the same methods on both nodes. Node path: " + String(path)); // disabled - linked
@@ -153,8 +153,8 @@ void SceneCacheInterface::process_confirm_path(int p_from, const uint8_t *p_pack
 
 	if (valid_rpc_checksum == false) {
 		const Node *node = ObjectDB::get_instance<Node>(*oid);
-		ERR_FAIL_NULL(node); // Bug.
-		ERR_PRINT("The rpc node checksum failed. Make sure to have the same methods on both nodes. Node path: " + String(node->get_path()));
+		//ERR_FAIL_NULL(node); // Bug.
+		//ERR_PRINT("The rpc node checksum failed. Make sure to have the same methods on both nodes. Node path: " + String(node->get_path())); // disabled - linked
 	}
 
 	NodeCache *cache = nodes_cache.getptr(*oid);
