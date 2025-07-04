@@ -1,0 +1,14 @@
+[remap]
+
+importer="glsl"
+type="RDShaderFile"
+uid="uid://pcicty3lc4jx"
+path="res://.godot/imported/scene_forward_vertex_lights_inc.glsl-8199c1448f104cbb48a1d489bc8e09f2.res"
+
+[deps]
+
+source_file="res://godot/servers/rendering/renderer_rd/shaders/scene_forward_vertex_lights_inc.glsl"
+dest_files=["res://.godot/imported/scene_forward_vertex_lights_inc.glsl-8199c1448f104cbb48a1d489bc8e09f2.res"]
+
+[params]
+

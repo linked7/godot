@@ -116,7 +116,7 @@ void SceneCacheInterface::process_simplify_path(int p_from, const uint8_t *p_pac
 	ERR_FAIL_NULL(node);
 	const bool valid_rpc_checksum = multiplayer->get_rpc_md5(node) == methods_md5;
 	if (valid_rpc_checksum == false) {
-		ERR_PRINT("The rpc node checksum failed. Make sure to have the same methods on both nodes. Node path: " + String(path));
+		// ERR_PRINT("The rpc node checksum failed. Make sure to have the same methods on both nodes. Node path: " + String(path)); // disabled - linked
 	}
 
 	peers_info[p_from].recv_nodes.insert(id, RecvNode(node->get_instance_id(), path));

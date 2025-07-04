@@ -1,0 +1,14 @@
+[remap]
+
+importer="glsl"
+type="RDShaderFile"
+uid="uid://bq7of28dhm4sl"
+path="res://.godot/imported/half_inc.glsl-542454c54b61a620a144250f2ef5318d.res"
+
+[deps]
+
+source_file="res://godot/servers/rendering/renderer_rd/shaders/half_inc.glsl"
+dest_files=["res://.godot/imported/half_inc.glsl-542454c54b61a620a144250f2ef5318d.res"]
+
+[params]
+

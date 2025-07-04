@@ -1,0 +1,14 @@
+[remap]
+
+importer="glsl"
+type="RDShaderFile"
+uid="uid://bq44x7uin2dvn"
+path="res://.godot/imported/alpha_stitch.glsl-ec5ad94cde9c036e814213ee5324b1d1.res"
+
+[deps]
+
+source_file="res://godot/modules/betsy/alpha_stitch.glsl"
+dest_files=["res://.godot/imported/alpha_stitch.glsl-ec5ad94cde9c036e814213ee5324b1d1.res"]
+
+[params]
+
