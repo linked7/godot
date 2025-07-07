@@ -466,7 +466,7 @@ Error SceneRPCInterface::rpcp(Object *p_obj, int p_peer_id, const StringName &p_
 	bool call_local_native = false;
 	bool call_local_script = false;
 	const RPCConfigCache &config_cache = _get_node_config(node);
-	uint16_t 	 = config_cache.ids.has(p_method) ? config_cache.ids[p_method] : UINT16_MAX;
+	uint16_t rpc_id = config_cache.ids.has(p_method) ? config_cache.ids[p_method] : UINT16_MAX;
 	//ERR_FAIL_COND_V_MSG(rpc_id == UINT16_MAX, ERR_INVALID_PARAMETER,
 			//vformat("Unable to get the RPC configuration for the function \"%s\" at path: \"%s\". This happens when the method is missing or not marked for RPCs in the local script.", p_method, node->get_path())); // disabled - linked
 	const RPCConfig &config = config_cache.configs[rpc_id];
